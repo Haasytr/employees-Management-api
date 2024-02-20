@@ -3,13 +3,12 @@ import { EmployeeAlreadyExists } from "./errors/employee-already-exists";
 import { EmployeesRepository } from "@/repositories/employees-repository";
 
 import { hash } from 'bcrypt'
-import { InvalidAuthorization } from "./errors/only-admins-can-create-employees";
 
 interface CreateEmployeeRequest {
    name: string
    email: string
    password: string
-   role: 'Intern' | 'Programmer' | 'Admin' 
+   role: 'Admin' | 'User'
    sector: string
 }
 

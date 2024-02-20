@@ -17,7 +17,7 @@ describe("Create employee Use Case", () => {
         name: 'Jonh cena',
         email: 'jonhcena@test.com',
         password: '123321',
-        role: 'Intern',
+        role: 'User',
         sector: 'Development'
     })
 
@@ -28,7 +28,7 @@ describe("Create employee Use Case", () => {
         name: 'Jonh cena',
         email: 'jonhcena@test.com',
         password: '123',
-        role: 'Intern',
+        role: 'User',
         sector: 'Development'
     })
 
@@ -42,7 +42,7 @@ describe("Create employee Use Case", () => {
         name: 'Jonh cena',
         email: 'jonhcena@test.com',
         password: '123',
-        role: 'Intern',
+        role: 'User',
         sector: 'Development'
     })
    
@@ -52,7 +52,7 @@ describe("Create employee Use Case", () => {
             name: 'Jonh cena',
             email: 'jonhcena@test.com',
             password: '123',
-            role: 'Intern',
+            role: 'User',
             sector: 'Development'
         })
     }).rejects.toBeInstanceOf(EmployeeAlreadyExists)

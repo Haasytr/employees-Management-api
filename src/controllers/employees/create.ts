@@ -8,7 +8,7 @@ export async function create(req: FastifyRequest, res: FastifyReply) {
         name: z.string(),
         email: z.string().email(),
         password: z.string().min(6),
-        role: z.enum(["Admin", "Intern", "Programmer"]),
+        role: z.enum(["Admin", "User"]),
         sector: z.string()
     })
 
