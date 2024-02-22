@@ -6,7 +6,7 @@ import { verifyUserRole } from "@/middlewares/verify-user-role";
 import { FastifyInstance } from "fastify";
 
 export async function EmployeesRoutes(app: FastifyInstance) {
-    app.post("/employees", { onRequest: [verifyJWT] }, create)
-    app.get("/employees", { onRequest: [verifyJWT, verifyUserRole("Admin")] }, fetch)
+    app.post("/employees", { onRequest: [verifyJWT, verifyUserRole("Admin")] }, create)
+    app.get("/employees", { onRequest: [verifyJWT] }, fetch)
     app.post("/session", authenticate)
 }
