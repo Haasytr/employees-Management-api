@@ -5,11 +5,11 @@ import { EmployeesRepository } from "@/repositories/employees-repository";
 import { hash } from 'bcrypt'
 
 interface CreateEmployeeRequest {
-   name: string
-   email: string
-   password: string
-   role: 'Admin' | 'User'
-   sector: string
+    name: string
+    email: string
+    password: string
+    role: 'Admin' | 'User'
+    sector: string
 }
 
 interface CreateEmployeeResponse {

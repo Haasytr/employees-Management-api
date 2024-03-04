@@ -15,14 +15,14 @@ describe("Fetch employees use case", () => {
         name: 'Jonh cena',
         email: 'jonhcena@test.com',
         password: '123321',
-        role: 'Intern',
+        role: 'User',
         sector: 'Development'
     })
     await employeesRepository.create({
         name: 'Jonh team',
         email: 'jonhdoe@test.com',
         password: '123321',
-        role: 'Intern',
+        role: 'User',
         sector: 'Development'
     })
     const { employees } = await sut.execute({
